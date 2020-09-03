@@ -1,3 +1,8 @@
+<?php
+include("conec.php")
+
+?>
+
 <!DOCTYPE html PUBLIC "_//W3C//DTD XHTML"
 <html xmlns="http://www.w3.org/1999/xhtml">
 <html> 
@@ -21,10 +26,13 @@
   #imagen{
     text-align: center;
   }
+
   </style>
   </head>
   <body id="cuerpo">
-  <p id="titulo">SISTEMA DE VENTAS </p>
+  <h1><font color="red"><p  id="titulo">SISTEMA DE VENTAS </p></font></h1>
+
+  <body background="imagen/2.jpg"></body>
   <form id="forml" name="forml" method="post" action="validar.php">
   <div align="center">
   <table width="500"border="0">
@@ -34,7 +42,9 @@
   </tr> 
   <tr>
   <td colspan="2" bgcolor="#00ff99">
-  
+
+
+
 </td>
 </tr>
 <tr>
@@ -59,7 +69,7 @@
   </tr>
   <tr>
   <td colspan="2" bgcolor="#00FF99" id="imagen">
-  <img src="imagenes/llaves.jpg" width="224" height="97"/>
+  <img src="imagen/1.jpg" width="500" height="300"/>
   </td>
   </tr>
  </table>
