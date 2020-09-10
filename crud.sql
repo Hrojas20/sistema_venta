@@ -62,7 +62,8 @@ CREATE TABLE `login` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
-
+-- usuario: Hilder --
+-- contraseña: 123456 --
 --
 -- Volcado de datos para la tabla `usuarios`
 --
