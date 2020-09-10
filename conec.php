@@ -1,19 +1,13 @@
+
+
 <?php
-function dbConnect (){
- 	$conn =	null;
- 	$host = 'Localhost';
- 	$db = 	'ventas';
- 	$user = 'root';
- 	$pwd = 	'';
-	try {
-	   	$conn = new PDO('mysql:host='.$host.';ventas='.$db, $user, $pwd);
 
-	}
-	catch (PDOException $e) {
-		echo '<p>Error al conectar a la base de datos</p>';
-	    exit;
-	}
-	return $conn;
- }
 
- ?>
+		$mysqli = new MySQLi("localhost", "root","", "crud",3360);
+		if ($mysqli -> connect_errno) {
+			die( "Fallo la conexión a MySQL: (" . $mysqli -> mysqli_connect_errno() 
+				. ") " . $mysqli -> mysqli_connect_error());
+		}
+		else
+
+?>
