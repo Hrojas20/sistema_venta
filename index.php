@@ -2,14 +2,12 @@
 include("conec.php")
 
 ?>
+<!DOCTYPE>
+<head>
 
-<!DOCTYPE html PUBLIC "_//W3C//DTD XHTML"
-<html xmlns="http://www.w3.org/1999/xhtml">
-<html> 
- <head> 
- <meta  http-equiv="Content-Type" conten="text/html; 
- charset=utf-8"/>
-   <title>Nuestro primer proyecto en php, css y javaScript (Enricoti)</title> 
+
+  <meta charset="utf-8">
+  <title>Nuestro primer proyecto en php, css y javaScript</title> 
    <style type="text/css">
    #titulo{
      text-align: center;
@@ -29,51 +27,44 @@ include("conec.php")
 
   </style>
   </head>
-  <body id="cuerpo">
-  <h1><font color="red"><p  id="titulo">SISTEMA DE VENTAS </p></font></h1>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+</head>
+<h1><font color="red"><p  id="titulo">SISTEMA DE VENTAS </p></font></h1>
 
   <body background="imagen/2.jpg"></body>
-  <form id="forml" name="forml" method="post" action="validar.php">
-  <div align="center">
-  <table width="500"border="0">
-  <tr>
-  <td colspan="2" bgcolor="#00FF99"><div align="center">
-  <strong>Ingrese datos</strong></div></td>      
-  </tr> 
-  <tr>
-  <td colspan="2" bgcolor="#00ff99">
 
+<body>
 
+    <div class="container formulario">
 
-</td>
-</tr>
-<tr>
-
-  <td bgcolor="#00FF99">Usuario:</td>
-  <td bycolor="#00FF99"><label>
-  <input type="text" name="usu" id="textfield"/>
-  </label></td>
-  </tr>
-  <tr>
-  <td bgcolor="#00FF99">Contraseña:</td>
-  <td bgcolor="#00FF99"><label>
-  <input type="password" name="con" id="textfield2"/>
- </label></td>
- </tr>
- <tr>
-<td bgcolor="#00FF99">&nbsp;</td>
-<td bgcolor="#00FF99"><label>
-
-  <input type="submit" name="button" id="button" value="Ingresar"/> 
-  </label></td>
-  </tr>
-  <tr>
-  <td colspan="2" bgcolor="#00FF99" id="imagen">
-  <img src="imagen/1.jpg" width="500" height="300"/>
-  </td>
-  </tr>
- </table>
+<br>
+<br>
+   <center> 
+ <form action="validar.php" method="post">
+ <div class="form-group">
+<img src="imagen/11.jpg" border="1"  width="88" height="150">
+<td label  for="usuario"> <h3><font color="red"><p>Usuario</h3></label></td></p>
+<div class="col-xs-10 col-xs-offset-1">
+  <input type="text" name="mail" class="form-control Input" required placeholder="">
  </div>
- </form>
- </body>
-  </html>
+ </div>
+<div class="form-group">
+<img src="imagen/1.jpg" border="1"  width="150" height="90">
+<label class="col-xs-12" for="password"td bgcolor="#00FF99"><h3>Contraseña</h3></label>
+<div class="col-xs-10 col-xs-offset-1">
+<input type="password" name="pass" class="form-control col-xs-12 Input" required placeholder="">
+</div>
+</div>
+<div class="form-group">
+ <button type="submit" ame="submit" class="btn btn-success center-block btn-lg">Ingresar</button>
+ <button type="submit" class="btn btn-muted center-block btn-lg"><a href="registro.php">Registrar</a></button>
+ <button type="reset" class="btn btn-danger center-block btn-lg">Limpiar</button>
+ </div>
+</form>
+</center>
+</div>
+</body>
+</html>

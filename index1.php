@@ -2,36 +2,97 @@
 include("conec.php")
 
 ?>
-
-<!DOCTYPE html PUBLIC "_//W3C//DTD XHTML"
-<html xmlns="http://www.w3.org/1999/xhtml">
-<html> 
- <head> 
- <meta  http-equiv="Content-Type" conten="text/html; 
- charset=utf-8"/>
- <link type="text/css" rel="stylesheet" href="estilos.css"/>
-
-</body>
-</header>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="utf-8">
+	<title>sistema de ventas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
 <body>
-<div id="principal">
-<div id="cabecera">
-<div id="cabederecha">
-<p><?php
-session_start();
-if(isset($_SESSION['usuario'])){
-    echo "Bienvenido: ".$_SESSION['usuario'];
-    ?>
-    </P>
-    <p><a href="salir.php">Cerrar sesion</a></p>
+     <div id="contenedor">
+     <header>
+        <a href="index.html"><h1>SISTEMA DE VENTAS</h1></a>
+     	<div id="redes">
+     	      <a href="http://www.facebook.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqU_7C34YrhnRjJzZqdE3vTpPU3JCox_akVHFj3IDZATZCf6XuVw" alt="facebook" height="40" width="40"></a>
+              <a href="http://www.twitter.com"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJmO5ZLZiAOp83UVxzz6jmAK42BeaWgRWQbMu_wcQLLOdENtQa" alt="twitter" height="60" width="60"></a>
+              <a href="http://www.youtube.com"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHWdEteBvqkDTdnKU9FFckUOAvumjRvd6jZw8_2ARajPPvr79F" alt="youtube" height="40" width="40"></a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#">USUARIO</a></li>
+            <li><a href="#">PRODUCTO</a></li>
+            <li><a href="#">FACTURA</a></li>
+            <li><a href="#">CONTACTO</a></li>     
+            <li><a href="#">REPORTE</a></li> 
+        </ul>
+    </nav>
+
+    <section id="banner">
+    <body background="imagen/3.jpg" width="940"></body>
+    </section>
+    <section id="contenido">
+        <article class="articulos">
+            <h2>articulo 1</h2>
+            <img src=imagen/4.jpg>
+            <p>Para las personas que son deportistas y dedican a correr, requieren de un tipo de zapatillas con</p>
+            <p>determinadas carácterísticas. Esto se debe a que se dedica muchas horas a entrenar, así como se participa </p>
+            <p>en muchas competencias, lo que requiere de un excelente calzado.</p>
+      </article>
+      <tr>
+         <article class="articulos">
+            <h2>articulo 2</h2>
+            <img src=imagen/5.png>
+            <p>Para las personas que les gustas vestidos, requieren un vistidos como estas con</p>
+            <p>determinadas carácterísticas. </p>
+            <p>en muchas compromisos, lo que requiere de un excelente vestido como esta.</p>
+        
+        </article>
+
+        <tr>
+         <article class="articulos">
+            <h2>articulo 3</h2>
+            <img src=imagen/6.jpg>
+            <p>Para las personas que les gustan casacas es un vistimienta  como abrigos con</p>
+            <p>determinadas carácterísticas. </p>
+            <p>en muchas compromisos, lo que requiere de un excelente vestido como esta.</p>
+        
+        </article>
+        <tr>
+         <article class="articulos">
+            <h2>articulo 4</h2>
+            <img src=imagen/10.jpg>
+            <p>Para las personas que les gustas poleras, requieren un poleras como estas con</p>
+            <p>determinadas carácterísticas. </p>
+            <p>en muchas, requiere de un excelente convnacion como esta.</p>
+        
+        </article>
+     </section>
+      <aside>
+            <h3>publicidad</h3>
+            <p>EL tenemos todo tipo de ropas a precio unico, tenemos el 50% de descuento en prendas de vestir.</p>
+            <div id="imgaside"><img src=imagen/7.png></div>
+        </aside>
+        <tr>
+        <aside>
+            <h3>En Oferta</h3>
+            <p>EL tenemos todo tipo de ropas a precio unico, tenemos el 50% de descuento en prendas de vestir.</p>
+            <div id="imgaside"><img src=imagen/11.jpg></div>
+        </aside>
+        <tr>
+        <aside>
+            <h3>En Oferta</h3>
+            <p>EL tenemos todo tipo de ropas a precio unico, tenemos el 50% de descuento en prendas de vestir.</p>
+            <div id="imgaside"><img src=imagen/9.jpg></div>
+        </aside>
+        <footer>
+             <p>&copy; Derechos Reservados: Hilder Rojas</p>
+        </footer>
     </div>
-    </div>
-    <div id="menu">
-   <p>Mantenimiento de la tabla de producto </p>
-   </div>
-   <div id="cuerpo"> 
-   <p>
-<?php
+    <?php
 if(isset($_POST['eliminar'])){
 
     $code=$_POST['elimina'];
@@ -87,9 +148,8 @@ else
     header("location:index.php");
 }
 ?>
-</div>
-</div>
+
+
 </body>
 </html>
 
-   
